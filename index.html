@@ -1,0 +1,70 @@
+<!-- <!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Search algorithm visualizer </title>
+        <link rel="stylesheet" href="src/loader.css">
+        <script src="src/loader.js"></script>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bruno Ace">
+        <link rel="stylesheet" href="src/main.css">
+    </head>
+    <body>
+<div class="loader-page">
+    <div class="loader"></div>
+</div>
+<div class = "app-container">
+    <div class="visualizer">
+</div>
+</div>
+<div class="visualize_btn_container">
+    <button class ="btn visulaize_btn">Visualize DFS!</button>
+</div>
+
+<div class ="menu_button_container">
+    <button id="clearNode" class="btn menu_button">clear</button>
+    <button id="clearWall" class="btn menu_button">clear wall</button>
+    <button class="btn menu_button algoSpeed-btn">
+        speed
+        <div id="algoSpeed-menu" class="dropdown-menu">
+            <div class="item" data-speed = 70>0.25x</div>
+            <div class="item" data-speed = 50>0.5x</div>
+            <div class="item" data-speed = 30>0.75x</div>
+            <div class="item active-menu-item" data-speed = 10>1x</div>
+        </div>
+    </button>
+    <button class="btn menu_button algoMenu-btn">
+        algorithm
+        <div id="algorithm-menu" class="dropdown-menu">
+            <div class="item" data-algorithmindex = 2>Depth first search</div>
+            <div class="item active-menu-item" data-algorithmindex = 3>Breadth first search</div>
+        </div>
+
+    </button>
+    <button class="btn menu_button" style="border:0">load</button>
+</div>
+        <script src="/src/lib//gsap-public/minified/gsap.min.js"></script>
+        <script src="src/stack.js"></script>
+        <script src="src/queue.js"></script>
+        <script type="module" src="src/app.js"></script>
+        <script type="module" src="src/main.js"></script>
+        <script src="src/node.js"></script>
+        <script>
+            
+        </script>
+    </body>
+</html>
